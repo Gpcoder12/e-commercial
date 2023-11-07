@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+
+:root {
+    --primary: #000000;
+    --primary-light: #ffffff;
+    --primary-neutral: #F2F0F0;
+    --secondary-neutral: #a5a4a4;
+    --danger: #ff0000;
+}
+
+.logo {
+    font-size: clamp(1.3rem, 3vw, 1.5rem);
+    font-weight: 500;
+    color: var(--primary);
+}
+
+.text {
+    font-size: clamp(.9rem, 3vw, 1rem);
+    line-height: 20px;
+    padding: .5rem 0;
+}
+
+/* Scrollbar for Chrome */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary)
+}
+
+
+/* Scrollbar for FireFox */
+@supports (scrollbar-color: red blue) {
+    * {
+        scrollbar-color: var(--primary) #f1f1f1;
+        scrollbar-width: thin;
+    }
+}
+
+/* Media Queries */
+
+@media (min-width:768px) {
+    .text {
+        line-height: 25px;
+    }
+
+}

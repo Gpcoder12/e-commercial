@@ -1,0 +1,45 @@
+.filter__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.33);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    z-index: 10;
+}
+
+.filter {
+    padding: 1rem 0;
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background: white;
+}
+
+.filter__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    padding-bottom: 1.5rem;
+}
+
+.filter__heading span {
+    cursor: pointer;
+}
+
+/* Media Queries */
+
+@media (min-width:400px) {
+    .filter {
+        width: 20rem;
+        margin-left: auto;
+        padding: 1rem;
+    }
+}
